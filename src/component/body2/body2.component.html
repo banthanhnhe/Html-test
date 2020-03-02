@@ -1,0 +1,14 @@
+<div class="row body-declare " *ngFor="let listNew of news">
+  <div class="col-4">
+    <!-- get img -->
+    <a href="#"><img class="w-100" src="{{ listNew.img }}"/></a>
+  </div>
+  <div class="new ">
+    <a href="#" class="new-sample-img color-d">
+      <h3>{{ listNew.title }}</h3>
+    </a>
+    <a href="#" class="role">{{ listNew.role }}</a>
+    <span class="date">{{ listNew.date }}</span>
+    <div class="new-string">{{ listNew.description }}</div>
+  </div>
+</div>

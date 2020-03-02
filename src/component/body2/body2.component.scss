@@ -1,0 +1,27 @@
+@import "../body/body.component.scss";
+.new {
+  width: 420px;
+  overflow: hidden;
+  h3 {
+    height: 71px;
+    overflow: hidden;
+  }
+}
+a {
+  color: #333333;
+  &:hover {
+    color: red;
+  }
+}
+.role {
+  font-size: 10px;
+  color: red !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+}
+.date {
+  margin-left: 3px;
+  font-size: 10px;
+}

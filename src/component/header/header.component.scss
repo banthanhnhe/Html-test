@@ -1,0 +1,135 @@
+// function add image content
+@mixin btn-img-content($img) {
+  background: url($img) no-repeat;
+
+  font-size: 0;
+  background-size: 30px 38px;
+  line-height: 38px;
+}
+
+li,
+ul {
+  list-style-type: none;
+}
+.header-container {
+  width: 1140px;
+
+  position: relative;
+
+  height: 80px;
+  .text-content {
+    position: absolute;
+    text-align: right;
+    left: 650px;
+    width: auto;
+    display: inline-block;
+  }
+  .logo {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px 0 0 20px;
+  }
+  .input {
+    top: 35px;
+    left: 610px;
+    position: absolute;
+    border: 1px solid;
+    height: 35px;
+    width: 180px;
+    display: flex;
+    input {
+      border: none;
+      padding: 0 0 0 3px;
+      width: 150px;
+      &,
+      select {
+        outline: none;
+      }
+    }
+  }
+}
+
+// content on right search input
+.list-content {
+  position: absolute;
+  left: 800px;
+  top: 33px;
+  display: flex;
+  vertical-align: center;
+  li {
+    margin: 0 0 0 3px;
+  }
+  .btn-danger {
+    width: 90px;
+  }
+  .btn-fb {
+    @include btn-img-content("../../assets/pic/icon-fb.png");
+    &:hover {
+      @include btn-img-content("../../assets/pic/icon-fb-hover.png");
+    }
+  }
+  .btn-youtube {
+    @include btn-img-content("../../assets/pic/icon-youtube-1.png");
+    &:hover {
+      @include btn-img-content("../../assets/pic/icon-youtube-1-hover.png");
+    }
+  }
+  .btn-login {
+    @include btn-img-content("../../assets/pic/icon-login.png");
+  }
+}
+// img in side button search
+.btn-deco {
+  padding: 0 0 0 0;
+  width: 30px;
+  font-size: 0;
+  overflow: hidden;
+  background: url("../../assets/pic/images.png") no-repeat;
+  background-size: 35px 35px;
+
+  &,
+  select {
+    outline: none;
+  }
+}
+
+.navbar li {
+  text-align: center;
+  &:hover {
+    background-color: red;
+  }
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  .drop-down {
+    display: none;
+    background-color: gainsboro;
+  }
+  &:hover .drop-down {
+    display: block;
+  }
+  &::before {
+    content: "";
+    border-top: 1px solid rgb(156, 152, 152);
+    display: block;
+    padding-top: 20px;
+  }
+}
+.content {
+  color: black;
+}
+.navbar {
+  background-color: none;
+  margin: 15px 0 15px 0;
+  top: 0;
+  line-height: 20px;
+
+  li a {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+}

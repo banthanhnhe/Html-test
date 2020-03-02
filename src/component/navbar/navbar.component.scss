@@ -1,0 +1,66 @@
+@import "../header/header.component.scss";
+
+.dropdown1 {
+  display: inline-block;
+  position: relative;
+  .drop-down1 {
+    display: none;
+    background-color: gainsboro;
+  }
+  &:hover .drop-down1 {
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+  }
+}
+.border-bottom-red {
+  border-bottom: 1px solid red;
+  font-size: 0;
+}
+.bder::before {
+  content: "";
+  border-top: 2px solid rgb(247, 174, 174);
+  display: block;
+}
+.assi {
+  display: inline;
+}
+.sticky {
+  position: sticky;
+  top: 60px;
+  z-index: 1020;
+  img {
+    height: 80px;
+    width: 200px;
+  }
+}
+
+.hotnew {
+  display: inline-block;
+  width: 850px;
+  position: relative;
+  a {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    margin-left: 10px;
+  }
+}
+.img-thunder {
+  background: url(../../assets/pic/icon-thunder.jpg) no-repeat;
+  background-size: 35px 40px;
+  padding: 0 0 0 30px;
+  background-color: none;
+}
+
+.contact {
+  position: absolute;
+  right: 0;
+  top: 0;
+  p {
+    font-size: 10px;
+    line-height: 10px;
+    float: right;
+  }
+}

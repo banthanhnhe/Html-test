@@ -1,0 +1,58 @@
+@import "../body2/body2.component.scss";
+
+.bgc-dark {
+  background: rgb(168, 164, 164);
+}
+.footer {
+  margin-left: 4px;
+  background-color: grayscale($color: #d4d1d1);
+}
+
+.text-item {
+  width: 100%;
+  padding: 0 0 0 30px;
+  display: inline-block;
+  color: #333333;
+  font-weight: 750;
+}
+
+.menu-bottom {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0;
+  margin: 0 0 0;
+  display: inline-block;
+
+  .item-active {
+    width: 158px;
+    display: inline-block;
+    height: 100%;
+    line-height: 28px;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  .submenu {
+    padding: 0 0 0 30px;
+  }
+  .t2-row {
+    padding-top: 6px;
+  }
+}
+.foot {
+  border: 1px solid black;
+  padding: 10px 0 0 20px;
+  position: relative;
+  display: flex;
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.info {
+  padding-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  line-height: 5px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
